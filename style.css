@@ -1,0 +1,120 @@
+:root {
+	font-family: Arial, Helvetica, sans-serif;
+	--color-html: #F06529;
+	--color-php: #7875B5;
+	--color-web: #999;
+}
+
+@media only screen and (min-width: 600px) {
+	body {
+		padding: 10px 10vw;
+	}
+}
+
+p {
+	line-height: 1.5em;
+}
+
+code {
+	/* Container */
+	background-color: whitesmoke;
+	overflow-x: auto;
+	/* Text */
+	color: midnightblue;
+	font-family: monospace;
+	padding: 2px;
+}
+
+code > div {
+	margin-left: -12ch;
+	white-space: pre;
+	tab-size: 3ch;
+}
+
+.quiz > div {
+	margin-left: 3ch;
+}
+
+.php, .output, .html, .quiz {
+	display: block;
+	width: 600px;
+	max-height: 800px;
+	margin: 1em 0;
+	font-size: 13px;
+	line-height: 1.5em;
+	font-family: monospace;
+}
+
+.php {
+	border: 2px solid var(--color-php);
+}
+
+.html {
+	border: 2px solid var(--color-html);
+}
+
+.output {
+	color: #333;
+	border: 2px solid var(--color-web);
+}
+
+.quiz {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 2px solid olivedrab;
+}
+
+
+.output > div {
+	margin-left: 3ch;
+	padding: 1em 0;
+}
+
+.php::before, .output::before, .html::before, .quiz::before {
+	display: block;
+	padding: 4px 0 4px 0;
+	text-indent: 3ch;
+	font-size: 1.25em;
+	color: whitesmoke;
+	font-weight: bold;
+}
+
+.php::before {
+	content: "PHP:";
+	background-color: var(--color-php);
+}
+
+.html::before {
+	content: "Código: HTML";
+	background-color: var(--color-html);
+}
+
+.output::before {
+	content: "Saída: Web";
+	background-color: var(--color-web);
+}
+
+.quiz::before {
+	font-family: monospace;
+	content: "QUIZ";
+	background-color: olivedrab;
+}
+
+.hl {
+	color: orangered;
+	font-weight: bold;
+}
+
+.comment {
+	color: olivedrab;
+}
+
+label ~ input {
+	display: block;
+	margin-bottom: 1em;
+}
+
+footer {
+	text-align: center;
+	margin-top: 50px;
+	padding: 20px;
+}
